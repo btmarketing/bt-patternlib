@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'public/css/style.css': 'source/sass/style.scss'
+                    'public/css/style.css': 'source/scss/style.scss'
                 }
             }
         },
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
             },
             //compile when any SCSS file is updated
             css: {
-                files: ['source/sass/bootstrap/*.scss','source/sass/style.scss'],
+                files: ['source/scss/bootstrap/*.scss','source/scss/style.scss'],
                 tasks: ['sass'],
                 options: {
                     spawn: false,
