@@ -10,6 +10,9 @@
 .patternwrap {
   margin: 20px; }
 
+.color-palette {
+  padding-bottom: 20px; }
+
 .colorpattern {
   height: 55px;
   line-height: 55px;
@@ -20,6 +23,10 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+.color-dark {
+  color: #ffffff;
+  opacity: .9; }
 
 .red {
   background-color: #D1201A; }
@@ -105,9 +112,152 @@
   .pink.dark4 {
     background-color: #33131C; }
 
-.color-dark {
-  color: #ffffff;
-  opacity: .9; }
+.orange {
+  background-color: #FF8F26; }
+  .orange.light1 {
+    background-color: #FF9B3E; }
+  .orange.light2 {
+    background-color: #FFB46E; }
+  .orange.light3 {
+    background-color: #FFC793; }
+  .orange.light4 {
+    background-color: #FFDAB7; }
+  .orange.light5 {
+    background-color: #FFECDB; }
+  .orange.dark1 {
+    background-color: #CC721E; }
+  .orange.dark2 {
+    background-color: #995617; }
+  .orange.dark3 {
+    background-color: #66390F; }
+  .orange.dark4 {
+    background-color: #331D08; }
+
+.green {
+  background-color: #76B73F; }
+  .green.light1 {
+    background-color: #8DC35F; }
+  .green.light2 {
+    background-color: #A4CF7F; }
+  .green.light3 {
+    background-color: #BBDB9F; }
+  .green.light4 {
+    background-color: #D1E7BF; }
+  .green.light5 {
+    background-color: #E8F3DF; }
+  .green.dark1 {
+    background-color: #5E9232; }
+  .green.dark2 {
+    background-color: #476E26; }
+  .green.dark3 {
+    background-color: #2F4919; }
+  .green.dark4 {
+    background-color: #18250D; }
+
+.teal {
+  background-color: #23B2A1; }
+  .teal.light1 {
+    background-color: #48BFB1; }
+  .teal.light2 {
+    background-color: #6CCCC0; }
+  .teal.light3 {
+    background-color: #91D9D0; }
+  .teal.light4 {
+    background-color: #B6E5E0; }
+  .teal.light5 {
+    background-color: #DAF2EF; }
+  .teal.dark1 {
+    background-color: #197D71; }
+  .teal.dark2 {
+    background-color: #135E55; }
+  .teal.dark3 {
+    background-color: #0C3E38; }
+  .teal.dark4 {
+    background-color: #061F1C; }
+
+.cyan {
+  background-color: #00BFFF; }
+  .cyan.light1 {
+    background-color: #2BCAFF; }
+  .cyan.light2 {
+    background-color: #55D4FF; }
+  .cyan.light3 {
+    background-color: #80DFFF; }
+  .cyan.light4 {
+    background-color: #AAEAFF; }
+  .cyan.light5 {
+    background-color: #D4F4FF; }
+  .cyan.dark1 {
+    background-color: #0099CC; }
+  .cyan.dark2 {
+    background-color: #007399; }
+  .cyan.dark3 {
+    background-color: #004C66; }
+  .cyan.dark4 {
+    background-color: #002633; }
+
+.blue {
+  background-color: #0080FF; }
+  .blue.light1 {
+    background-color: #2B95FF; }
+  .blue.light2 {
+    background-color: #55AAFF; }
+  .blue.light3 {
+    background-color: #80C0FF; }
+  .blue.light4 {
+    background-color: #AAD5FF; }
+  .blue.light5 {
+    background-color: #D4EAFF; }
+  .blue.dark1 {
+    background-color: #0066CC; }
+  .blue.dark2 {
+    background-color: #004D99; }
+  .blue.dark3 {
+    background-color: #003366; }
+  .blue.dark4 {
+    background-color: #001A33; }
+
+.navy {
+  background-color: #2373B2; }
+  .navy.light1 {
+    background-color: #488ABF; }
+  .navy.light2 {
+    background-color: #6CA2CC; }
+  .navy.light3 {
+    background-color: #91B9D9; }
+  .navy.light4 {
+    background-color: #B6D0E5; }
+  .navy.light5 {
+    background-color: #DAE8F2; }
+  .navy.dark1 {
+    background-color: #1C5C8E; }
+  .navy.dark2 {
+    background-color: #15456B; }
+  .navy.dark3 {
+    background-color: #0E2E47; }
+  .navy.dark4 {
+    background-color: #071724; }
+
+.purple {
+  background-color: #7665AB; }
+  .purple.light1 {
+    background-color: #8D7FB9; }
+  .purple.light2 {
+    background-color: #A498C7; }
+  .purple.light3 {
+    background-color: #BBB2D5; }
+  .purple.light4 {
+    background-color: #D1CCE3; }
+  .purple.light5 {
+    background-color: #E8E5F1; }
+  .purple.dark1 {
+    background-color: #5E5189; }
+  .purple.dark2 {
+    background-color: #473D67; }
+  .purple.dark3 {
+    background-color: #2F2844; }
+  .purple.dark4 {
+    background-color: #181422; }
 
 /* Style Guide Interface Colors */
 /* Typography */
