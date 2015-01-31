@@ -7,8 +7,82 @@
  * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
  * These styles will not be your production CSS.
  */
- 
 
+ @import "./source/scss/btstyles/btcolors";
+
+.patternwrap {
+	margin: 20px;
+}
+
+
+.colorpattern {
+  height: 55px;
+  line-height: 55px;
+  width: 100%;
+  font-weight: 300;
+  padding: 0 15px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.red {
+	background-color: $btred;
+	&.light1 {background-color: $btred-light-1}
+	&.light2 {background-color: $btred-light-2}
+	&.light3 {background-color: $btred-light-3}
+	&.light4 {background-color: $btred-light-4}
+	&.light5 {background-color: $btred-light-5}
+	&.dark1 {background-color: $btred-dark-1;}
+	&.dark2 {background-color: $btred-dark-2;}
+	&.dark3 {background-color: $btred-dark-3;}
+	&.dark4 {background-color: $btred-dark-4;}
+}
+
+.gray {
+	background-color: $btgray;
+	&.light1 {background-color: $btgray-light-1}
+	&.light2 {background-color: $btgray-light-2}
+	&.light3 {background-color: $btgray-light-3}
+	&.light4 {background-color: $btgray-light-4}
+	&.light5 {background-color: $btgray-light-5}
+	&.dark1 {background-color: $btgray-dark-1;}
+	&.dark2 {background-color: $btgray-dark-2;}
+	&.dark3 {background-color: $btgray-dark-3;}
+	&.dark4 {background-color: $btgray-dark-4;}
+}
+
+.slate {
+	background-color: $btslate;
+	&.light1 {background-color: $btslate-light-1}
+	&.light2 {background-color: $btslate-light-2}
+	&.light3 {background-color: $btslate-light-3}
+	&.light4 {background-color: $btslate-light-4}
+	&.light5 {background-color: $btslate-light-5}
+	&.dark1 {background-color: $btslate-dark-1;}
+	&.dark2 {background-color: $btslate-dark-2;}
+	&.dark3 {background-color: $btslate-dark-3;}
+	&.dark4 {background-color: $btslate-dark-4;}
+}
+
+.pink {
+	background-color: $btpink;
+	&.light1 {background-color: $btpink-light-1}
+	&.light2 {background-color: $btpink-light-2}
+	&.light3 {background-color: $btpink-light-3}
+	&.light4 {background-color: $btpink-light-4}
+	&.light5 {background-color: $btpink-light-5}
+	&.dark1 {background-color: $btpink-dark-1;}
+	&.dark2 {background-color: $btpink-dark-2;}
+	&.dark3 {background-color: $btpink-dark-3;}
+	&.dark4 {background-color: $btpink-dark-4;}
+}
+
+.color-dark {
+	color: #ffffff;
+	opacity: .9;
+}
 /* Style Guide Interface Colors */ 
 $sg-primary : #222;
 $sg-secondary : #808080;
@@ -48,6 +122,7 @@ $animate-quick: 0.2s;
 .demo {
 	overflow: hidden;
 	margin-bottom: 1rem;
+	background: green;
 }
 
 .demo .gi, .demo .demo-block {

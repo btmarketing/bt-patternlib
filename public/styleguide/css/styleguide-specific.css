@@ -7,6 +7,108 @@
  * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
  * These styles will not be your production CSS.
  */
+.patternwrap {
+  margin: 20px; }
+
+.colorpattern {
+  height: 55px;
+  line-height: 55px;
+  width: 100%;
+  font-weight: 300;
+  padding: 0 15px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.red {
+  background-color: #D1201A; }
+  .red.light1 {
+    background-color: #D94540; }
+  .red.light2 {
+    background-color: #E06A66; }
+  .red.light3 {
+    background-color: #E8908D; }
+  .red.light4 {
+    background-color: #F0B5B3; }
+  .red.light5 {
+    background-color: #F7DAD9; }
+  .red.dark1 {
+    background-color: #A71A15; }
+  .red.dark2 {
+    background-color: #7D1310; }
+  .red.dark3 {
+    background-color: #540D0A; }
+  .red.dark4 {
+    background-color: #2A0605; }
+
+.gray {
+  background-color: #808080; }
+  .gray.light1 {
+    background-color: #999999; }
+  .gray.light2 {
+    background-color: #B3B3B3; }
+  .gray.light3 {
+    background-color: #CCCCCC; }
+  .gray.light4 {
+    background-color: #E6E6E6; }
+  .gray.light5 {
+    background-color: #F2F2F2; }
+  .gray.dark1 {
+    background-color: #666666; }
+  .gray.dark2 {
+    background-color: #4D4D4D; }
+  .gray.dark3 {
+    background-color: #333333; }
+  .gray.dark4 {
+    background-color: #1A1A1A; }
+
+.slate {
+  background-color: #5F7D8C; }
+  .slate.light1 {
+    background-color: #77909D; }
+  .slate.light2 {
+    background-color: #8FA4AF; }
+  .slate.light3 {
+    background-color: #B0BEC5; }
+  .slate.light4 {
+    background-color: #CFD8DC; }
+  .slate.light5 {
+    background-color: #ECEFF1; }
+  .slate.dark1 {
+    background-color: #536E7B; }
+  .slate.dark2 {
+    background-color: #445A65; }
+  .slate.dark3 {
+    background-color: #36474F; }
+  .slate.dark4 {
+    background-color: #263238; }
+
+.pink {
+  background-color: #FF5D8C; }
+  .pink.light1 {
+    background-color: #FF789F; }
+  .pink.light2 {
+    background-color: #FF93B2; }
+  .pink.light3 {
+    background-color: #FFAEC6; }
+  .pink.light4 {
+    background-color: #FFC9D9; }
+  .pink.light5 {
+    background-color: #FFE4EC; }
+  .pink.dark1 {
+    background-color: #CC4A70; }
+  .pink.dark2 {
+    background-color: #993854; }
+  .pink.dark3 {
+    background-color: #662538; }
+  .pink.dark4 {
+    background-color: #33131C; }
+
+.color-dark {
+  color: #ffffff;
+  opacity: .9; }
+
 /* Style Guide Interface Colors */
 /* Typography */
 /* Defaults */
@@ -14,20 +116,21 @@
 /* Breakpoints */
 .demo {
   overflow: hidden;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  background: green; }
 
 .demo .gi, .demo .demo-block {
-  background: #dddddd;
-  color: gray;
+  background: #ddd;
+  color: #808080;
   text-align: center;
   margin-bottom: 0.5em;
   padding: 1em !important; }
   .demo .gi:nth-of-type(2n), .demo .demo-block:nth-of-type(2n) {
-    color: #dddddd;
-    background: gray; }
+    color: #ddd;
+    background: #808080; }
   .demo .gi .gi, .demo .demo-block .gi {
     background: rgba(0, 0, 0, 0.1);
-    color: #dddddd; }
+    color: #ddd; }
     .demo .gi .gi:nth-of-type(2n), .demo .demo-block .gi:nth-of-type(2n) {
       background: rgba(0, 0, 0, 0.3); }
 
@@ -45,7 +148,7 @@
     left: 0;
     bottom: 0;
     width: 20px;
-    background: gray; }
+    background: #808080; }
   .animate-move:hover > .demo-shape {
     left: 100%;
     margin-left: -20px; }
@@ -54,7 +157,7 @@
   overflow: hidden; }
   .sg-colors li {
     overflow: hidden;
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     padding: 0.3em;
     margin: 0 0.2em 0.2em 0; }
     @media all and (min-width: 30em) {
@@ -78,3 +181,5 @@
 
 .sg-label {
   line-height: 1; }
+
+/*# sourceMappingURL=styleguide-specific.css.map */

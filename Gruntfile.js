@@ -28,7 +28,8 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'public/css/style.css': 'source/scss/style.scss'
+                    'public/css/style.css': 'source/scss/style.scss',
+                    'public/styleguide/css/styleguide-specific.css': 'core/styleguide/css/styleguide-specific.scss'
                 }
             }
         },
@@ -49,7 +50,12 @@ module.exports = function(grunt) {
             },
             //compile when any SCSS file is updated
             css: {
-                files: ['source/scss/bootstrap/*.scss','source/scss/style.scss'],
+                files: [
+                    'source/scss/bootstrap/*.scss',
+                    'source/scss/btstyles/*.scss',
+                    'source/scss/style.scss',
+                    'core/styleguide/css/styleguide-specific.scss',
+                    ],
                 tasks: ['sass'],
                 options: {
                     spawn: false,
