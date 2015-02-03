@@ -33,11 +33,11 @@ small {
 	display: inline-block;
 	@include ktype(-1,0,1); 
 }
+
 b, i, strong, em, small, code {
-	line-height: 1;
+	line-height: $body-line-height;
 }
 
-h1, h2,
 .h1, .h2 {
 	&--hero {
 	font-family: $header-hero-family;

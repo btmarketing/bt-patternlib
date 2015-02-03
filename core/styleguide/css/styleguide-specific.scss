@@ -9,10 +9,11 @@
  */
 
  @import "./source/scss/btstyles/btcolors";
+ @import "./source/scss/btstyles/btvariables";
 
 // A small wrapper around all content
 .patternwrap {
-	margin: 0 20px;
+	margin: $line-height-computed;
 }
 
 // For the color palettes

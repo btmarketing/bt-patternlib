@@ -20,6 +20,8 @@ $body-font-size:    16px;
 $body-line-height:  1.5;
 $scale-factor:      1.414; //golden ratio
 $ie8compatability:  true;
+$line-height-computed:    floor(($body-font-size * $body-line-height)) !default;
+
 
 
 
