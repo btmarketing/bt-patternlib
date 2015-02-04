@@ -6,3 +6,4 @@ latest-change.txt
 node_modules/
 public/patterns
 public/styleguide/html/styleguide.html
+public/index.html
