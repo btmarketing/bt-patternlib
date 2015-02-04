@@ -1,0 +1,48 @@
+// Knife is imported and used to achieve vertical Rhythm.
+// https://github.com/Pushplaybang/knife
+
+// Import Google Font
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600,300,400,700&subset=latin,cyrillic,latin-ext);
+
+
+
+html { 
+	@include khtml(); 
+	font-family: 'Open Sans', sans-serif;
+}
+body { @include kbody(); }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $header-font-family;
+	font-weight: $header-font-weight;
+}
+/* Typography */
+h1, .h1 { @include ktype(5, 0, 1); }
+h2, .h2 { @include ktype(4, 0, 1); }
+h3, .h3 { @include ktype(3, 0, 1); }
+h4, .h4 { @include ktype(2, 0, 1); }
+h5, .h5 { @include ktype(1, 0, 1); }
+h6, .h6 { 
+	font-weight: 600;
+	@include ktype(0, 0, 0); 
+}
+
+p, ul, ol,dl {@include ktype(0,0,1);}
+small { 
+	display: inline-block;
+	@include ktype(-1,0,1); 
+}
+
+b, i, strong, em, small, code {
+	line-height: $body-line-height;
+}
+
+.h1, .h2 {
+	&--hero {
+	font-family: $header-hero-family;
+	font-weight: $header-hero-weight;
+	}
+}
+
+blockquote { @include ktype (0, 1, 1); }
