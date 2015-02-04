@@ -5,5 +5,4 @@ latest-change.txt
 *.sass-cache/
 node_modules/
 public/patterns
-public/styleguide/html/styleguide.html
 public/index.html
