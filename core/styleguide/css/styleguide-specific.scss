@@ -7,7 +7,180 @@
  * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
  * These styles will not be your production CSS.
  */
- 
+
+ @import "./source/scss/btstyles/btcolors";
+ @import "./source/scss/btstyles/btvariables";
+
+// A small wrapper around all content
+.patternwrap {
+	margin: $line-height-computed;
+}
+
+// For the color palettes
+
+.color-palette {
+	padding-bottom: 20px;
+}
+
+.colorpattern {
+	height: 55px;
+  	line-height: 55px;
+  	width: 100%;
+  	font-weight: 300;
+  	padding: 0 15px;
+  	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+.color-dark {
+	color: #ffffff;
+	opacity: .9;
+}
+
+.red {
+	background-color: $btred;
+	&.light1 {background-color: $btred-light-1}
+	&.light2 {background-color: $btred-light-2}
+	&.light3 {background-color: $btred-light-3}
+	&.light4 {background-color: $btred-light-4}
+	&.light5 {background-color: $btred-light-5}
+	&.dark1 {background-color: $btred-dark-1;}
+	&.dark2 {background-color: $btred-dark-2;}
+	&.dark3 {background-color: $btred-dark-3;}
+	&.dark4 {background-color: $btred-dark-4;}
+}
+
+.gray {
+	background-color: $btgray;
+	&.light1 {background-color: $btgray-light-1}
+	&.light2 {background-color: $btgray-light-2}
+	&.light3 {background-color: $btgray-light-3}
+	&.light4 {background-color: $btgray-light-4}
+	&.light5 {background-color: $btgray-light-5}
+	&.dark1 {background-color: $btgray-dark-1;}
+	&.dark2 {background-color: $btgray-dark-2;}
+	&.dark3 {background-color: $btgray-dark-3;}
+	&.dark4 {background-color: $btgray-dark-4;}
+}
+
+.slate {
+	background-color: $btslate;
+	&.light1 {background-color: $btslate-light-1}
+	&.light2 {background-color: $btslate-light-2}
+	&.light3 {background-color: $btslate-light-3}
+	&.light4 {background-color: $btslate-light-4}
+	&.light5 {background-color: $btslate-light-5}
+	&.dark1 {background-color: $btslate-dark-1;}
+	&.dark2 {background-color: $btslate-dark-2;}
+	&.dark3 {background-color: $btslate-dark-3;}
+	&.dark4 {background-color: $btslate-dark-4;}
+}
+
+.pink {
+	background-color: $btpink;
+	&.light1 {background-color: $btpink-light-1}
+	&.light2 {background-color: $btpink-light-2}
+	&.light3 {background-color: $btpink-light-3}
+	&.light4 {background-color: $btpink-light-4}
+	&.light5 {background-color: $btpink-light-5}
+	&.dark1 {background-color: $btpink-dark-1;}
+	&.dark2 {background-color: $btpink-dark-2;}
+	&.dark3 {background-color: $btpink-dark-3;}
+	&.dark4 {background-color: $btpink-dark-4;}
+}
+
+.orange {
+	background-color: $btorange;
+	&.light1 {background-color: $btorange-light-1}
+	&.light2 {background-color: $btorange-light-2}
+	&.light3 {background-color: $btorange-light-3}
+	&.light4 {background-color: $btorange-light-4}
+	&.light5 {background-color: $btorange-light-5}
+	&.dark1 {background-color: $btorange-dark-1;}
+	&.dark2 {background-color: $btorange-dark-2;}
+	&.dark3 {background-color: $btorange-dark-3;}
+	&.dark4 {background-color: $btorange-dark-4;}
+}
+
+.green {
+	background-color: $btgreen;
+	&.light1 {background-color: $btgreen-light-1}
+	&.light2 {background-color: $btgreen-light-2}
+	&.light3 {background-color: $btgreen-light-3}
+	&.light4 {background-color: $btgreen-light-4}
+	&.light5 {background-color: $btgreen-light-5}
+	&.dark1 {background-color: $btgreen-dark-1;}
+	&.dark2 {background-color: $btgreen-dark-2;}
+	&.dark3 {background-color: $btgreen-dark-3;}
+	&.dark4 {background-color: $btgreen-dark-4;}
+}
+
+.teal {
+	background-color: $btteal;
+	&.light1 {background-color: $btteal-light-1}
+	&.light2 {background-color: $btteal-light-2}
+	&.light3 {background-color: $btteal-light-3}
+	&.light4 {background-color: $btteal-light-4}
+	&.light5 {background-color: $btteal-light-5}
+	&.dark1 {background-color: $btteal-dark-1;}
+	&.dark2 {background-color: $btteal-dark-2;}
+	&.dark3 {background-color: $btteal-dark-3;}
+	&.dark4 {background-color: $btteal-dark-4;}
+}
+
+.cyan {
+	background-color: $btcyan;
+	&.light1 {background-color: $btcyan-light-1}
+	&.light2 {background-color: $btcyan-light-2}
+	&.light3 {background-color: $btcyan-light-3}
+	&.light4 {background-color: $btcyan-light-4}
+	&.light5 {background-color: $btcyan-light-5}
+	&.dark1 {background-color: $btcyan-dark-1;}
+	&.dark2 {background-color: $btcyan-dark-2;}
+	&.dark3 {background-color: $btcyan-dark-3;}
+	&.dark4 {background-color: $btcyan-dark-4;}
+}
+
+.blue {
+	background-color: $btblue;
+	&.light1 {background-color: $btblue-light-1}
+	&.light2 {background-color: $btblue-light-2}
+	&.light3 {background-color: $btblue-light-3}
+	&.light4 {background-color: $btblue-light-4}
+	&.light5 {background-color: $btblue-light-5}
+	&.dark1 {background-color: $btblue-dark-1;}
+	&.dark2 {background-color: $btblue-dark-2;}
+	&.dark3 {background-color: $btblue-dark-3;}
+	&.dark4 {background-color: $btblue-dark-4;}
+}
+
+.navy {
+	background-color: $btnavy;
+	&.light1 {background-color: $btnavy-light-1}
+	&.light2 {background-color: $btnavy-light-2}
+	&.light3 {background-color: $btnavy-light-3}
+	&.light4 {background-color: $btnavy-light-4}
+	&.light5 {background-color: $btnavy-light-5}
+	&.dark1 {background-color: $btnavy-dark-1;}
+	&.dark2 {background-color: $btnavy-dark-2;}
+	&.dark3 {background-color: $btnavy-dark-3;}
+	&.dark4 {background-color: $btnavy-dark-4;}
+}
+
+.purple {
+	background-color: $btpurple;
+	&.light1 {background-color: $btpurple-light-1}
+	&.light2 {background-color: $btpurple-light-2}
+	&.light3 {background-color: $btpurple-light-3}
+	&.light4 {background-color: $btpurple-light-4}
+	&.light5 {background-color: $btpurple-light-5}
+	&.dark1 {background-color: $btpurple-dark-1;}
+	&.dark2 {background-color: $btpurple-dark-2;}
+	&.dark3 {background-color: $btpurple-dark-3;}
+	&.dark4 {background-color: $btpurple-dark-4;}
+}
 
 /* Style Guide Interface Colors */ 
 $sg-primary : #222;
@@ -48,6 +221,7 @@ $animate-quick: 0.2s;
 .demo {
 	overflow: hidden;
 	margin-bottom: 1rem;
+	background: green;
 }
 
 .demo .gi, .demo .demo-block {
