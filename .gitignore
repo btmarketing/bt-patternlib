@@ -3,9 +3,6 @@ config.ini
 latest-change.txt
 *-ck.js
 *.sass-cache/
-<<<<<<< HEAD
-node_modules
-=======
 node_modules/
-public/_patterns
->>>>>>> dev
+public/patterns
+public/styleguide/html/styleguide.html
