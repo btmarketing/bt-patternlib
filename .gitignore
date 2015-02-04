@@ -4,4 +4,6 @@ latest-change.txt
 *-ck.js
 *.sass-cache/
 node_modules/
-public/_patterns
+public/patterns
+public/styleguide/html/styleguide.html
+public/index.html
