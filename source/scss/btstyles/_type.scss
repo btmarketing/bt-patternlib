@@ -4,13 +4,13 @@
 // Import Google Font
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600,300,400,700&subset=latin,cyrillic,latin-ext);
 
-
+@include establish-baseline;
 
 html { 
-	@include khtml(); 
 	font-family: 'Open Sans', sans-serif;
+	@include adjust-leading-to(2);
 }
-body { @include kbody(); }
+body {}
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -18,26 +18,42 @@ h1, h2, h3, h4, h5, h6,
 	font-weight: $header-font-weight;
 }
 /* Typography */
-h1, .h1 { @include ktype(5, 0, 1); }
-h2, .h2 { @include ktype(4, 0, 1); }
-h3, .h3 { @include ktype(3, 0, 1); }
-h4, .h4 { @include ktype(2, 0, 1); 
+h1, .h1 { 
+	@include adjust-font-size-to(49px, 4.5); 
+	@include rhythm(0, 0, 0, 2, 49px);
+}
+h2, .h2 { 
+	@include adjust-font-size-to(39px); 
+	@include rhythm(0, 0, 0, 2, 39px);
+}
+h3, .h3 { 
+	@include adjust-font-size-to(31px); 
+	@include rhythm(0, 0, 0, 2, 31px);
+}
+h4, .h4 {
+	@include adjust-font-size-to(25px);
+	@include rhythm(0, 0, 0, 2, 25px);
 	font-weight: 300;
-	}
-h5, .h5 { @include ktype(1, 0, 1); }
+}
+h5, .h5 { 
+	@include adjust-font-size-to(20px); 
+	@include rhythm(0, 0, 0, 2, 20px);}
 h6, .h6 { 
+	@include adjust-font-size-to(16px);
+	@include rhythm(0, 0, 0, 0, 16px);
 	font-weight: 600;
-	@include ktype(0, 0, 0); 
 }
 
-p, ul, ol,dl {@include ktype(0,0,1);}
+p, ul, ol,dl {
+	@include rhythm(0, 0, 0, 1, 16px);
+}
 small { 
 	display: inline-block;
-	@include ktype(-1,0,1); 
+	@include rhythm(0, 0, 0, 2, 16px);
 }
 
-b, i, strong, em, small, code {
-	line-height: $body-line-height;
+b, i, strong, em, small, code, kbd {
+	line-height: $base-line-height;
 }
 
 .h1, .h2 {
@@ -49,12 +65,13 @@ b, i, strong, em, small, code {
 
 h1 + h5, 
 h2 + h5 {
-	margin-top: $line-height-computed * -1;
+	margin-top: $base-line-height * -2;
 };
 
 
 blockquote { 
-	@include ktype (2, 1, 1); 
+	@include adjust-font-size-to(25px);
+	@include rhythm-margins(1, 2, 25px);
 	font-weight: 300;
 	background: -webkit-linear-gradient($btblue, $btpurple);
     -webkit-background-clip: text;

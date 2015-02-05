@@ -25,6 +25,14 @@ module.exports = function(grunt) {
             path: 'http://localhost:<%= express.all.options.port%>'
           }
         },
+        sass: {
+            dist: {
+                files: {
+                    'public/css/style.css': 'source/scss/style.scss',
+                    'public/styleguide/css/styleguide-specific.css': 'core/styleguide/css/styleguide-specific.scss'
+                }
+            }
+        },
         compass: {
             dist: {
                 options: {
@@ -72,8 +80,8 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('default', ['build', 'server', 'watch']);
-    grunt.registerTask('build', ['shell:patternlab', 'compass']);
-    grunt.registerTask('buildcss',  ['compass']);
+    grunt.registerTask('build', ['shell:patternlab', 'sass']);
+    grunt.registerTask('buildcss',  ['sass']);
     grunt.registerTask('server', ['express','open',]);
 
 };

@@ -16,11 +16,12 @@ $header-font-family:	'Open Sans', Helvetica, Arial, sans-serif !default;
 $header-font-weight:	400;
 $header-hero-family:	Helvetica, Arial, sans-serif !default;
 $header-hero-weight:	600;
-$body-font-size:    16px;
-$body-line-height:  1.5;
-$scale-factor:      1.25; //golden ratio
-$ie8compatability:  true;
-$line-height-computed:    floor(($body-font-size * $body-line-height)) !default;
+$base-font-size:    	16px;
+$base-line-height:  	12px;
+$rhythm-unit:			"rem";
+$scale-factor:      	1.25; //golden ratio
+$rem-with-px-fallback:	true;
+$line-height-computed:	floor(($base-font-size * $base-line-height)) !default;
 
 
 
@@ -138,7 +139,7 @@ $headings-small-color:        $btgray-light-2 !default;
 //** Blockquote small color
 $blockquote-small-color:      $btgray-light-2 !default;
 //** Blockquote font size
-$blockquote-font-size:        ($body-font-size * 1.25) !default;
+//$blockquote-font-size:        ($base-font-size * 1.25) !default;
 //** Blockquote border color
 $blockquote-border-color:     $btgray-light-3 !default;
 //** Page header border color

@@ -20,11 +20,9 @@
 // Body reset
 
 html {
-  @include khtml(); 
 }
 
 body {
-  @include kbody();
   font-family: $font-family;
   color: $text-color;
   background-color: $body-bg;
@@ -90,7 +88,7 @@ img {
 // Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
 .img-thumbnail {
   padding: $thumbnail-padding;
-  line-height: $body-line-height;
+  line-height: $base-line-height;
   background-color: $thumbnail-bg;
   border: 1px solid $thumbnail-border;
   border-radius: $thumbnail-border-radius;
@@ -109,8 +107,8 @@ img {
 // Horizontal rules
 
 hr {
-  margin-top:    $body-line-height;
-  margin-bottom: $body-line-height;
+  margin-top:    $base-line-height;
+  margin-bottom: $base-line-height;
   border: 0;
   border-top: 1px solid $hr-border;
 }
