@@ -21,7 +21,9 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 { @include ktype(5, 0, 1); }
 h2, .h2 { @include ktype(4, 0, 1); }
 h3, .h3 { @include ktype(3, 0, 1); }
-h4, .h4 { @include ktype(2, 0, 1); }
+h4, .h4 { @include ktype(2, 0, 1); 
+	font-weight: 300;
+	}
 h5, .h5 { @include ktype(1, 0, 1); }
 h6, .h6 { 
 	font-weight: 600;
@@ -45,4 +47,17 @@ b, i, strong, em, small, code {
 	}
 }
 
-blockquote { @include ktype (0, 1, 1); }
+h1 + h5, 
+h2 + h5 {
+	margin-top: $line-height-computed * -1;
+};
+
+
+blockquote { 
+	@include ktype (2, 1, 1); 
+	font-weight: 300;
+	background: -webkit-linear-gradient($btblue, $btpurple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
