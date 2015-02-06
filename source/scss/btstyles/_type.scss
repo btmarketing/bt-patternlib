@@ -18,29 +18,32 @@ h1, h2, h3, h4, h5, h6,
 	font-weight: $header-font-weight;
 }
 /* Typography */
+
+
+
 h1, .h1 { 
-	@include adjust-font-size-to(49px, 4.5); 
-	@include rhythm(0, 0, 0, 2, 49px);
+	@include adjust-font-size-to($size-1, 4.5); 
+	@include rhythm(0, 0, 0, 2, $size-1);
 }
 h2, .h2 { 
-	@include adjust-font-size-to(39px); 
-	@include rhythm(0, 0, 0, 2, 39px);
+	@include adjust-font-size-to($size-2); 
+	@include rhythm(0, 0, 0, 2, $size-2);
 }
 h3, .h3 { 
-	@include adjust-font-size-to(31px); 
-	@include rhythm(0, 0, 0, 2, 31px);
+	@include adjust-font-size-to($size-3); 
+	@include rhythm(0, 0, 0, 2, $size-3);
 }
 h4, .h4 {
-	@include adjust-font-size-to(25px);
-	@include rhythm(0, 0, 0, 2, 25px);
+	@include adjust-font-size-to($size-4);
+	@include rhythm(0, 0, 0, 2, $size-4);
 	font-weight: 300;
 }
 h5, .h5 { 
-	@include adjust-font-size-to(20px); 
-	@include rhythm(0, 0, 0, 2, 20px);}
+	@include adjust-font-size-to($size-5); 
+	@include rhythm(0, 0, 0, 2, $size-5);}
 h6, .h6 { 
-	@include adjust-font-size-to(16px);
-	@include rhythm(0, 0, 0, 0, 16px);
+	@include adjust-font-size-to($size-base);
+	@include rhythm(0, 0, 0, 0, $size-base);
 	font-weight: 600;
 }
 

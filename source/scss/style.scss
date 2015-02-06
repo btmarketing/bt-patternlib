@@ -1,12 +1,13 @@
+// import libraries
+
+@import "compass/typography/vertical_rhythm";
+@import "lib/modular-scale";
+
 // Core variables and mixins
 @import "btstyles/btcolors";
 @import "btstyles/btvariables";
 @import "bootstrap/mixins";
 @import "btstyles/mixins";
-
-// import libraries
-//@import "lib/knife";
-@import "compass/typography/vertical_rhythm";
 
 // Reset and dependencies
 @import "bootstrap/normalize";

@@ -11,6 +11,7 @@ $link-hover-color:      $btgray-dark-4 !default;
 $link-hover-decoration:	underline;
 
 //Typography
+// some variables needed for 
 $font-family:			'Open Sans', Helvetica, Arial, sans-serif !default;
 $header-font-family:	'Open Sans', Helvetica, Arial, sans-serif !default;
 $header-font-weight:	400;
@@ -19,11 +20,18 @@ $header-hero-weight:	600;
 $base-font-size:    	16px;
 $base-line-height:  	12px;
 $rhythm-unit:			"rem";
-$scale-factor:      	1.25; //golden ratio
+$ms-base:				$base-font-size;
+$ms-ratio:				$major-third;
 $rem-with-px-fallback:	true;
 $line-height-computed:	floor(($base-font-size * $base-line-height)) !default;
 
-
+// using modular scale
+$size-1:				ms(5);
+$size-2:				ms(4);
+$size-3:				ms(3);
+$size-4:				ms(2);
+$size-5:				ms(1);
+$size-base:				ms(0);
 
 
 //== Components
