@@ -7,13 +7,15 @@
  * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
  * These styles will not be your production CSS.
  */
-
- @import "./source/scss/btstyles/btcolors";
- @import "./source/scss/btstyles/btvariables";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/transition";
+@import "./source/scss/lib/modular-scale";
+@import "./source/scss/btstyles/btcolors";
+@import "./source/scss/btstyles/btvariables";
 
 // A small wrapper around all content
 .patternwrap {
-	margin: $line-height-computed;
+	margin: 24px;
 }
 
 // For the color palettes

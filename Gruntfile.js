@@ -33,6 +33,13 @@ module.exports = function(grunt) {
                 }
             }
         },
+        sass: {
+            dist: {
+                files: {
+                    'public/styleguide/css/styleguide-specific.css': 'core/styleguide/css/styleguide-specific.scss'
+                }
+            }
+        },
         watch: {
             //re-build patternlib when mustache or json files are updated
             html: {
@@ -56,7 +63,7 @@ module.exports = function(grunt) {
                     'source/scss/style.scss',
                     'core/styleguide/css/styleguide-specific.scss',
                     ],
-                tasks: ['compass'],
+                tasks: ['buildcss'],
                 options: {
                     spawn: false,
                     livereload:true
@@ -73,7 +80,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['build', 'server', 'watch']);
     grunt.registerTask('build', ['shell:patternlab', 'compass']);
-    grunt.registerTask('buildcss',  ['compass']);
+    grunt.registerTask('buildcss',  ['compass', 'sass']);
     grunt.registerTask('server', ['express','open',]);
 
 };
