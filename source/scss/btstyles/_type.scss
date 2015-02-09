@@ -52,7 +52,7 @@ p, ul, ol,dl {
 }
 small { 
 	display: inline-block;
-	@include rhythm(0, 0, 0, 2, 16px);
+	@include rhythm(0, 0, 0, 1, 16px);
 }
 
 b, i, strong, em, small, code, kbd {
@@ -74,7 +74,7 @@ h2 + h5 {
 
 blockquote { 
 	@include adjust-font-size-to(25px);
-	@include rhythm-margins(1, 2, 25px);
+	@include rhythm-margins(1, 1, 25px);
 	font-weight: 300;
 	background: -webkit-linear-gradient($btblue, $btpurple);
     -webkit-background-clip: text;

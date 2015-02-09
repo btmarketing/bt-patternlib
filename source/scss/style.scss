@@ -17,7 +17,7 @@
 
 // Core CSS
 @import "bootstrap/scaffolding";
-@import "btstyles/_type.scss";
+@import "btstyles/type.scss";
 //@import "bootstrap/type";
 //@import "bootstrap/code";
 @import "bootstrap/grid";
@@ -27,6 +27,7 @@
 @import "btstyles/btbuttons";
 
 //Components
+@import "btstyles/slab";
 //@import "bootstrap/component-animations";
 //@import "bootstrap/dropdowns";
 //@import "bootstrap/button-groups";
