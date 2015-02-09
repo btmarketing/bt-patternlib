@@ -1,0 +1,103 @@
+// Buttons
+// --------------------------------------------------
+
+// Button defaults
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: $border-radius-base;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  white-space: nowrap;
+  @include rhythm(0, 1, 1, 0, $size-base);
+  padding-left: $base-line-height*3;
+  padding-right: $base-line-height*3;
+  @include transition(all 0.3s ease-in-out);
+  &>.btn-subtext {
+    display: block;
+    @include adjust-font-size-to($size-6); 
+  }
+  &:hover,
+  &:focus,
+  &.focus {
+    text-decoration: none;
+  }
+}
+
+
+// Button Types
+.btn-primary {
+  background-color: $button-primary-bg;
+  color: $button-primary-color;
+  &:hover, &:active {
+    background-color: darken($button-primary-bg, 5%);
+    color: $button-primary-color;
+  }
+  &:disabled {
+    opacity: .5;
+  }
+}
+
+.btn-secondary {
+  color: $button-primary-bg;
+  background-color: transparent;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  @include h-borders(2px, 1, $size-5, solid);
+  &:hover, &:active {
+    background-color: $btgray-light-5;
+    color: $button-primary-bg;
+  }
+}
+
+// Make button width of parent
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-block + .btn-block {
+  margin-top: $base-line-height;
+}
+
+// Button Sizes
+.btn-sm {
+  @include adjust-font-size-to($size-6, 1); 
+  @include rhythm (0, 1, 1, 0, $size-6);
+  padding-left: $base-line-height*2;
+  padding-right: $base-line-height*2;
+  &.btn-secondary {
+    @include h-borders(2px, 1, $size-6, solid);
+  }
+}
+
+.btn-lg {
+  @include adjust-font-size-to($size-4, 4); 
+  @include rhythm (0, 1, 1, 0, $size-4);
+  padding-left: $base-line-height*4;
+  padding-right: $base-line-height*4;
+  &>.btn-subtext {
+    display: block;
+    @include adjust-font-size-to($size-6); 
+  }
+  &.btn-secondary {
+    @include h-borders(2px, 1, $size-4, solid);
+  }
+}
+
+.btn-xl {
+  @include adjust-font-size-to($size-3, 5); 
+  @include rhythm (0, 1.5, 1.5, 0, $size-3);
+  padding-left: $base-line-height*6;
+  padding-right: $base-line-height*6; 
+  &>.btn-subtext {
+    display: block;
+    @include adjust-font-size-to($size-base); 
+  }
+  &.btn-secondary {
+    @include h-borders(2px, 1.5, $size-3, solid);
+  }
+}

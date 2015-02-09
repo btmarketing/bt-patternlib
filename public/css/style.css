@@ -332,7 +332,7 @@ img {
   line-height: 12px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1671,6 +1671,202 @@ blockquote {
     margin-left: 100%;
   }
 }
+/* line 5, ../../source/scss/btstyles/_btbuttons.scss */
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-top: 0px;
+  margin-top: 0rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  padding-left: 36px;
+  padding-right: 36px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 19, ../../source/scss/btstyles/_btbuttons.scss */
+.btn > .btn-subtext {
+  display: block;
+  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+/* line 23, ../../source/scss/btstyles/_btbuttons.scss */
+.btn:hover, .btn:focus, .btn.focus {
+  text-decoration: none;
+}
+
+/* line 32, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-primary {
+  background-color: #0080FF;
+  color: #fff;
+}
+/* line 35, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-primary:hover, .btn-primary:active {
+  background-color: #0073e6;
+  color: #fff;
+}
+/* line 39, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-primary:disabled {
+  opacity: .5;
+}
+
+/* line 44, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-secondary {
+  color: #0080FF;
+  background-color: transparent;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  border-top-width: 2px;
+  border-top-width: 0.125rem;
+  border-top-style: solid;
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  border-bottom-width: 2px;
+  border-bottom-width: 0.125rem;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+}
+/* line 50, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-secondary:hover, .btn-secondary:active {
+  background-color: #F2F2F2;
+  color: #0080FF;
+}
+
+/* line 57, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* line 62, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-block + .btn-block {
+  margin-top: 12px;
+}
+
+/* line 67, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-sm {
+  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 12px;
+  line-height: 0.75rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/* line 72, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-sm.btn-secondary {
+  border-top-width: 2px;
+  border-top-width: 0.125rem;
+  border-top-style: solid;
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  border-bottom-width: 2px;
+  border-bottom-width: 0.125rem;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+}
+
+/* line 77, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-lg {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 48px;
+  line-height: 3rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+/* line 82, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-lg > .btn-subtext {
+  display: block;
+  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+/* line 86, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-lg.btn-secondary {
+  border-top-width: 2px;
+  border-top-width: 0.125rem;
+  border-top-style: solid;
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  border-bottom-width: 2px;
+  border-bottom-width: 0.125rem;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+}
+
+/* line 91, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-xl {
+  font-size: 31px;
+  font-size: 1.95313rem;
+  line-height: 60px;
+  line-height: 3.75rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  padding-top: 18px;
+  padding-top: 1.125rem;
+  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+/* line 96, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-xl > .btn-subtext {
+  display: block;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+/* line 100, ../../source/scss/btstyles/_btbuttons.scss */
+.btn-xl.btn-secondary {
+  border-top-width: 2px;
+  border-top-width: 0.125rem;
+  border-top-style: solid;
+  padding-top: 16px;
+  padding-top: 1rem;
+  border-bottom-width: 2px;
+  border-bottom-width: 0.125rem;
+  border-bottom-style: solid;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+}
+
 /* line 14, ../../source/scss/bootstrap/mixins/_clearfix.scss */
 .clearfix:before, .clearfix:after {
   content: " ";

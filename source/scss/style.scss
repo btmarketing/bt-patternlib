@@ -1,6 +1,7 @@
 // import libraries
 
 @import "compass/typography/vertical_rhythm";
+@import "compass/css3/transition";
 @import "lib/modular-scale";
 
 // Core variables and mixins
@@ -23,6 +24,7 @@
 //@import "bootstrap/tables";
 //@import "bootstrap/forms";
 //@import "bootstrap/buttons";
+@import "btstyles/btbuttons";
 
 //Components
 //@import "bootstrap/component-animations";
