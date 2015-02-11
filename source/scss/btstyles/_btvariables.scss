@@ -18,7 +18,7 @@ $header-font-weight:	400;
 $header-hero-family:	Helvetica, Arial, sans-serif !default;
 $header-hero-weight:	600;
 $base-font-size:    	16px;
-$base-line-height:  	12px;
+$base-line-height:  	$base-font-size*.75;
 $rhythm-unit:			"rem";
 $ms-base:				$base-font-size;
 $ms-ratio:				1.333;
@@ -34,7 +34,7 @@ $size-6:				ms(-1);
 $size-base:				ms(0);
 
 // Buttons
-$btn-font-weight:		300;
+$btn-font-weight:		400;
 $border-radius-base:	2px;
 $button-primary-bg:		$btblue;
 $button-primary-color:	#fff;

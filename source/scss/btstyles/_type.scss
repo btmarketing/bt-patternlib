@@ -9,6 +9,7 @@
 html { 
 	font-family: 'Open Sans', sans-serif;
 	@include adjust-leading-to(2);
+	-webkit-font-smoothing: antialiased;
 }
 body {}
 

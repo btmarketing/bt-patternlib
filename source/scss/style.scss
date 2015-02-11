@@ -11,7 +11,7 @@
 @import "btstyles/mixins";
 
 // Reset and dependencies
-@import "bootstrap/normalize";
+//@import "bootstrap/normalize";
 //@import "bootstrap/print";
 //@import "bootstrap/glyphicons";
 
@@ -23,6 +23,7 @@
 @import "bootstrap/grid";
 //@import "bootstrap/tables";
 //@import "bootstrap/forms";
+@import "btstyles/btforms.scss";
 //@import "bootstrap/buttons";
 @import "btstyles/btbuttons";
 
