@@ -1,0 +1,268 @@
+<form class="form form-inline">
+    <h4>Inline Form</h4>
+    <fieldset>
+        <legend>Legend</legend>
+
+        <input type="text" placeholder="text input">
+        <input type="search" placeholder="search input">
+        <select name="fooselect">
+            <option value="CA">CA</option>
+            <option value="NY">NY</option>
+        <select>
+
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </fieldset>
+</form>
+<div class="row">
+<div class="col-sm-6">
+
+    <h4>Multi-Column Form with Grids</h4>
+
+    <form class="form form-stacked">
+        <fieldset>
+            <legend>Legend</legend>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label>First Name</label>
+                    <input type="text">
+                </div>
+                <div class="col-sm-6">
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <label>E-Mail</label>
+                    <input type="email" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label>City</label>
+                    <input type="text">
+                </div>
+                <div class="col-sm-6">
+                    <label>State</label>
+                    <select class="pure-input-medium">
+                        <option>AL</option>
+                        <option>CA</option>
+                        <option>IL</option>
+                        <option>MD</option>
+                        <option>NY</option>
+                    </select>
+                </div>
+            </div>
+
+            <label class="checkbox">
+                <input type="checkbox"> I've read the terms and conditions
+            </label>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+
+
+    <h4>Stacked Form</h4>
+
+    <form class="form form-stacked">
+        <fieldset>
+            <legend>Legend</legend>
+
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password">
+            </div>
+
+            <div class="form-group">
+                <label>E-Mail</label>
+                <input type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>City</label>
+                <input type="text">
+                <aside class="form-message">*Required Field.</aside>
+            </div>
+
+            <div class="form-group">
+                <label>State</label>
+                <select class="form-input-medium">
+                    <option>AL</option>
+                    <option>CA</option>
+                    <option>IL</option>
+                    <option>MD</option>
+                    <option>NY</option>
+                </select>
+            </div>
+
+            <label class="checkbox">
+                <input type="checkbox"> I've read the terms and conditions
+            </label>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </fieldset>
+    </form>
+
+
+    <h4>Aligned Form</h4>
+
+    <form class="form form-aligned">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          <aside class="form-message">*Help Text</aside>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </div>
+    </form>
+
+
+
+    <h4>Grouped Inputs</h4>
+
+    <form class="form">
+        <fieldset>
+            <div class="form-group">
+                <input class="form-group" type="text" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="form-group">
+                <input type="text" placeholder="Another Group">
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Textareas can work here too"></textarea>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Even More Stuff">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Last Item">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </fieldset>
+    </form>
+
+    <h4>Invalid Inputs</h4>
+
+    <form class="form">
+        <input type="email" placeholder="Requires an email" required>
+    </form>
+
+
+    <h4>Disabled Inputs</h4>
+
+    <form class="form">
+        <input type="text" placeholder="Disabled input here..." value="Foo bar baz" disabled>
+    </form>
+
+
+    <h4>Readonly Inputs</h4>
+
+    <form class="form">
+        <input type="text" placeholder="Readonly input here..." value="Foo bar baz" readonly>
+    </form>
+
+
+    <h4>Selects</h4>
+
+    <form class="form">
+        <div class="form-group">
+            <select>
+                <option>Brazil</option>
+                <option>Canada</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Venezuela</option>
+            </select>
+        </div>
+
+        <select multiple="multiple">
+            <option>Brazil</option>
+            <option>Canada</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Venezuela</option>
+        </select>
+    </form>
+
+
+    <h4>Checkboxes and Radios</h4>
+
+    <form class="form">
+        <label class="checkbox">
+            <input type="checkbox" value="">
+            Here's option one.
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Here's a radio button. You can choose this one...
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            ...Or this one!
+        </label>
+    </form>
+
+
+    <h4>Help text</h4>
+
+    <form class="form form-stacked">
+        <fieldset>
+            <label>Last Name</label>
+            <input type="text" />
+            <aside class="form-message">Block help text</aside>
+        </fieldset>
+    </form>
+
+</div>
+</div>

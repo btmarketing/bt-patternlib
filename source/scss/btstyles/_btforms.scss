@@ -1,32 +1,28 @@
 // Forms
 // --------------------------------------------------
 
-// Table of Contents
-// 1.  Default Form (stacked)
-// 2. 
 
-
-.btform {
+.form {
 	margin-bottom: $base-line-height*2;
 }
 // default form (stacked)
-.btform input[type="text"],
-.btform input[type="password"],
-.btform input[type="email"],
-.btform input[type="url"],
-.btform input[type="date"],
-.btform input[type="month"],
-.btform input[type="time"],
-.btform input[type="datetime"],
-.btform input[type="datetime-local"],
-.btform input[type="week"],
-.btform input[type="number"],
-.btform input[type="search"],
-.btform input[type="tel"],
-.btform input[type="color"],
-.btform select,
-.btform textarea {
-	@include rhythm(0, 1, 1, 1, $size-base);
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="date"],
+.form input[type="month"],
+.form input[type="time"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="week"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="color"],
+.form select,
+.form textarea {
+	@include rhythm-padding(1, 1, $size-base);
  	@include rhythm-borders(2px, 1, $size-base, solid);
     display: block;
     border: 2px solid $btgray-light-4;
@@ -38,9 +34,9 @@
     width: 100%;
 }
 
-//IE 8 fix
-.btform input:not([type]) {
-    @include rhythm(0, 1, 1, 1, $size-base);
+//default form (stacked) IE8 fix
+.form input:not([type]) {
+    @include rhythm-padding(1, 1, $size-base);
  	@include rhythm-borders(2px, 1, $size-base, solid);
     display: block;
     border: 2px solid $btgray-light-4;
@@ -53,98 +49,98 @@
 }
 
 // form style while focused
-.btform input[type="text"]:focus,
-.btform input[type="password"]:focus,
-.btform input[type="email"]:focus,
-.btform input[type="url"]:focus,
-.btform input[type="date"]:focus,
-.btform input[type="month"]:focus,
-.btform input[type="time"]:focus,
-.btform input[type="datetime"]:focus,
-.btform input[type="datetime-local"]:focus,
-.btform input[type="week"]:focus,
-.btform input[type="number"]:focus,
-.btform input[type="search"]:focus,
-.btform input[type="tel"]:focus,
-.btform input[type="color"]:focus,
-.btform select:focus,
-.btform textarea:focus {
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus,
+.form input[type="url"]:focus,
+.form input[type="date"]:focus,
+.form input[type="month"]:focus,
+.form input[type="time"]:focus,
+.form input[type="datetime"]:focus,
+.form input[type="datetime-local"]:focus,
+.form input[type="week"]:focus,
+.form input[type="number"]:focus,
+.form input[type="search"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="color"]:focus,
+.form select:focus,
+.form textarea:focus {
     outline: 0;
     border-color: $btblue-light-4;
 }
 
-//IE8 fix
-.btform input:not([type]):focus {
+//form style while focused IE8 fix
+.form input:not([type]):focus {
     outline: 0;
     border-color: $btblue-light-4;
 }
 
 // disabled inputs
-.btform input[type="text"][disabled],
-.btform input[type="password"][disabled],
-.btform input[type="email"][disabled],
-.btform input[type="url"][disabled],
-.btform input[type="date"][disabled],
-.btform input[type="month"][disabled],
-.btform input[type="time"][disabled],
-.btform input[type="datetime"][disabled],
-.btform input[type="datetime-local"][disabled],
-.btform input[type="week"][disabled],
-.btform input[type="number"][disabled],
-.btform input[type="search"][disabled],
-.btform input[type="tel"][disabled],
-.btform input[type="color"][disabled],
-.btform select[disabled],
-.btform textarea[disabled] {
+.form input[type="text"][disabled],
+.form input[type="password"][disabled],
+.form input[type="email"][disabled],
+.form input[type="url"][disabled],
+.form input[type="date"][disabled],
+.form input[type="month"][disabled],
+.form input[type="time"][disabled],
+.form input[type="datetime"][disabled],
+.form input[type="datetime-local"][disabled],
+.form input[type="week"][disabled],
+.form input[type="number"][disabled],
+.form input[type="search"][disabled],
+.form input[type="tel"][disabled],
+.form input[type="color"][disabled],
+.form select[disabled],
+.form textarea[disabled] {
     cursor: not-allowed;
     background-color: $btgray-light-4;
     color: $btgray;
 }
 
-//IE8 Fix
-.btform input:not([type])[disabled] {
+//disabled inputs IE8 Fix
+.form input:not([type])[disabled] {
     cursor: not-allowed;
     background-color: $btgray-light-4;
     color: $btgray;
 }
 
 // Read Only Style
-.btform input[readonly],
-.btform select[readonly],
-.btform textarea[readonly] {
+.form input[readonly],
+.form select[readonly],
+.form textarea[readonly] {
     background-color: $btgray-light-4;
-    color: #777; $btgray;
+    color: $btgray;
     border-color: $btgray-light-3;
 }
 
 // Invalid Style
-.btform input:focus:invalid,
-.btform textarea:focus:invalid,
-.btform select:focus:invalid {
+.form input:focus:invalid,
+.form textarea:focus:invalid,
+.form select:focus:invalid {
     border-color: $btred-light-4;
 }
 
 // Select dropdown style
-.btform select {
+.form select {
 	height: $base-line-height*4;
 	background-color: transparent;
 }
 
 // Multiple select style
-.btform select[multiple] {
+.form select[multiple] {
     height: auto;
 }
 
-.btform label {
+.form label {
 }
 
-.btform fieldset {
-    margin: 0;
+.form fieldset {
+    margin-bottom: $base-line-height;
     padding: 0;
     border: 0;
 }
 
-.btform legend {
+.form legend {
     display: block;
     width: 100%;
     @include adjust-font-size-to($size-base);
@@ -153,32 +149,32 @@
 }
 
 // Inline form Style
-.btform-inline input[type="text"],
-.btform-inline input[type="password"],
-.btform-inline input[type="email"],
-.btform-inline input[type="url"],
-.btform-inline input[type="date"],
-.btform-inline input[type="month"],
-.btform-inline input[type="time"],
-.btform-inline input[type="datetime"],
-.btform-inline input[type="datetime-local"],
-.btform-inline input[type="week"],
-.btform-inline input[type="number"],
-.btform-inline input[type="search"],
-.btform-inline input[type="tel"],
-.btform-inline input[type="color"],
-.btform-inline input[type="file"],
-.btform-inline select,
-.btform-inline label,
-.btform-inline textarea {
+.form-inline input[type="text"],
+.form-inline input[type="password"],
+.form-inline input[type="email"],
+.form-inline input[type="url"],
+.form-inline input[type="date"],
+.form-inline input[type="month"],
+.form-inline input[type="time"],
+.form-inline input[type="datetime"],
+.form-inline input[type="datetime-local"],
+.form-inline input[type="week"],
+.form-inline input[type="number"],
+.form-inline input[type="search"],
+.form-inline input[type="tel"],
+.form-inline input[type="color"],
+.form-inline input[type="file"],
+.form-inline select,
+.form-inline label,
+.form-inline textarea {
     display: inline-block;
     margin: 0;
     width: auto;
     margin-right: $base-line-height;
 }
 
-// IE8 fix
-.btform-inline input:not([type]) {
+// Inline form Style IE8 fix
+.form-inline input:not([type]) {
     display: inline-block;
     margin: 0;
     width: auto;
@@ -186,99 +182,54 @@
 }
 
 // Aligned form style
-.btform-aligned input[type="text"],
-.btform-aligned input[type="password"],
-.btform-aligned input[type="email"],
-.btform-aligned input[type="url"],
-.btform-aligned input[type="date"],
-.btform-aligned input[type="month"],
-.btform-aligned input[type="time"],
-.btform-aligned input[type="datetime"],
-.btform-aligned input[type="datetime-local"],
-.btform-aligned input[type="week"],
-.btform-aligned input[type="number"],
-.btform-aligned input[type="search"],
-.btform-aligned input[type="tel"],
-.btform-aligned input[type="color"],
-.btform-aligned input[type="file"],
-.btform-aligned select,
-.btform-aligned label,
-.btform-aligned textarea {
-    width: auto;
-    display: inline-block;
+
+// make form groups in aligned forms act like rows
+.form-aligned .form-group {
+	margin-left: ($grid-gutter-width / -2);
+	margin-right: ($grid-gutter-width / -2);
+	&:before,
+  	&:after {
+    	content: " "; // 1
+    	display: table; // 2
+  	}
+  	&:after {
+    	clear: both;
+  	}
 }
 
-// IE8 fix
-.btform-aligned input:not([type]) {
-    width: auto;
-    display: inline-block;
+.form-aligned .checkbox,
+.form-aligned .radio {
+	margin: 0;
+}
+
+.control-label {
+	@include rhythm(0, .75, 0, 0, $size-base);
+	text-align: right;
 }
 
 
-.btform-aligned input,
-.btform-aligned textarea,
-.btform-aligned select,
-.btform-message-inline {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    vertical-align: middle;
-}
-.btform-aligned textarea {
-    vertical-align: top;
-}
-
-/* Aligned Forms */
-.btform-aligned .btform-control-group {
-    margin-bottom: 0.5em;
-}
-.btform-aligned .btform-control-group label {
-    text-align: right;
-    display: inline-block;
-    vertical-align: middle;
-    width: 10em;
-    margin: 0 1em 0 0;
-}
-.btform-aligned .btform-controls {
-    margin: 1.5em 0 0 11em;
-}
-
-.btform input[type="file"]:focus,
-.btform input[type="radio"]:focus,
-.btform input[type="checkbox"]:focus {
-    outline: thin solid #129FEA;
-    outline: 1px auto #129FEA;
-}
-.btform .btcheckbox,
-.btform .btradio {
-    margin-bottom: $base-line-height;
-    display: block;
-}
-
-
-// Helper classes
-
-// help message for inline forms
-.btform-message-inline {
-    display: inline-block;
-    padding-left: 0.3em;
-    color: #666;
-    vertical-align: middle;
-    font-size: $size-6;
-}
-
-// help message for stacked forms
-.btform-message {
-    display: block;
-    color: $btgray-dark-1;
-    font-size: $size-6;
-    margin-top: $base-line-height*-1;
+.checkbox {
+	display: block;
 	margin-bottom: $base-line-height;
 }
 
-// adds margin to buttons inside stacked forms
-.btform-btn-bump {
-	margin-bottom: $base-line-height !important;
+.radio {
+	display: block;
+	margin-bottom: $base-line-height;
+}
+
+// Helper classes
+
+// help with vertical spacing
+.form-group {
+	margin-bottom: $base-line-height;
+}
+
+// help message for stacked forms
+.form-message {
+    display: block;
+    color: $btgray-dark-1;
+    font-size: $size-6;
 }
 
 .btn + .btn {
