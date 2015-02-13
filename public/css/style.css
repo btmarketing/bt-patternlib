@@ -2052,7 +2052,7 @@ table th[class*="col-"] {
   border-radius: 2px;
   vertical-align: middle;
   font-weight: 400;
-  color: #999999;
+  color: #CCCCCC;
   -webkit-transition: border-color 0.3s ease-in-out;
   -o-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
