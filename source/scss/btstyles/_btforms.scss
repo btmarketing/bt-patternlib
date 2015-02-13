@@ -29,7 +29,7 @@
     border-radius: 2px;
     vertical-align: middle;
     font-weight: 400;
-    color: $btgray-light-1;
+    color: $btgray-dark-3;
     @include transition(border-color 0.3s ease-in-out);
     width: 100%;
 }
@@ -43,7 +43,7 @@
     border-radius: 2px;
     vertical-align: middle;
     font-weight: 400;
-    color: $btgray-light-1;
+    color: $btgray-light-3;
     @include transition(border-color 0.3s ease-in-out);
     width: 100%;
 }
