@@ -4,5 +4,3 @@ latest-change.txt
 *-ck.js
 *.sass-cache/
 node_modules/
-public/patterns
-public/index.html
