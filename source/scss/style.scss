@@ -11,17 +11,18 @@
 @import "btstyles/mixins";
 
 // Reset and dependencies
-//@import "bootstrap/normalize";
+@import "bootstrap/normalize";
 //@import "bootstrap/print";
 //@import "bootstrap/glyphicons";
 
 // Core CSS
 @import "bootstrap/scaffolding";
-@import "btstyles/type.scss";
 //@import "bootstrap/type";
+@import "btstyles/type.scss";
 //@import "bootstrap/code";
 @import "bootstrap/grid";
 //@import "bootstrap/tables";
+@import "btstyles/bttables";
 //@import "bootstrap/forms";
 @import "btstyles/btforms.scss";
 //@import "bootstrap/buttons";

@@ -39,6 +39,12 @@ $border-radius-base:	2px;
 $button-primary-bg:		$btblue;
 $button-primary-color:	#fff;
 
+// Tables
+$table-bg:                      transparent !default;
+$table-bg-accent:               $btgray-light-5 !default;
+$table-bg-hover:                $btgray-light-5 !default;
+$table-bg-active:               $table-bg-hover !default;
+$table-border-color:            $btgray-light-4 !default;
 
 //== Components
 //
