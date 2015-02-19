@@ -5,16 +5,16 @@
 
 //Base
 $body-bg:               #fff !default;
-$text-color:            $btgray-dark-3 !default;
-$link-color:            $btgray-dark-4 !default;
-$link-hover-color:      $btgray-dark-4 !default;
+$text-color:            $gray--9 !default;
+$link-color:            $gray--10 !default;
+$link-hover-color:      $gray--10 !default;
 $link-hover-decoration:	underline;
 
 //Typography
 // some variables needed for compass
 $font-family:				'Open Sans', Helvetica, Arial, sans-serif !default;
 $header-font-family:		'Open Sans', Helvetica, Arial, sans-serif !default;
-$header-font-weight:		400;
+$header-font-weight:		700;
 $header-hero-family:		Helvetica, Arial, sans-serif !default;
 $header-hero-weight:		600;
 $base-font-size:    		16px;
@@ -24,6 +24,7 @@ $rhythm-unit:				"rem";
 $ms-base:					$base-font-size;
 $ms-ratio:					1.333;
 $rem-with-px-fallback:		true;
+
 
 // H1 sizes using compass modular scale
 $size-1:				ms(5);
@@ -37,24 +38,24 @@ $size-base:				ms(0); // same as $base-font-weight
 // Buttons
 $btn-font-weight:		400;
 $border-radius-base:	2px;
-$button-primary-bg:		$btblue;
+$button-primary-bg:		$blue;
 $button-primary-color:	#fff;
 
 // Tables
 $table-bg:                      transparent !default;
-$table-bg-accent:               $btgray-light-5 !default;
-$table-bg-hover:                $btgray-light-5 !default;
+$table-bg-accent:               $gray--1 !default;
+$table-bg-hover:                $gray--1 !default;
 $table-bg-active:               $table-bg-hover !default;
-$table-border-color:            $btgray-light-4 !default;
+$table-border-color:            $gray--2 !default;
 
 // Code
 $font-family-monospace:			Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$code-color:                  	$btred-light-1 !default;
-$code-bg:                     	$btred-light-5 !default;
+$code-color:                  	$red--5 !default;
+$code-bg:                     	$red--1 !default;
 $kbd-color:                   	#fff !default;
-$kbd-bg:                      	$btgray-dark-3 !default;
+$kbd-bg:                      	$gray--9 !default;
 
-$pre-color:                   	$btgray-dark-3 !default;
+$pre-color:                   	$gray--9 !default;
 $pre-scrollable-max-height:   	340px !default;
 
 //== Components
@@ -161,22 +162,22 @@ $thumbnail-caption-padding:   9px !default;
 //** Horizontal offset for forms and lists.
 $component-offset-horizontal: 180px !default;
 //** Text muted color
-$text-muted:                  $btgray-light-2 !default;
+$text-muted:                  $gray--4 !default;
 //** Abbreviations and acronyms border color
-$abbr-border-color:           $btgray-light-2 !default;
+$abbr-border-color:           $gray--4 !default;
 //** Headings small color
-$headings-small-color:        $btgray-light-2 !default;
+$headings-small-color:        $gray--4 !default;
 //** Blockquote small color
-$blockquote-small-color:      $btgray-light-2 !default;
+$blockquote-small-color:      $gray--4 !default;
 //** Blockquote font size
 //$blockquote-font-size:        ($base-font-size * 1.25) !default;
 //** Blockquote border color
-$blockquote-border-color:     $btgray-light-3 !default;
+$blockquote-border-color:     $gray--3 !default;
 //** Page header border color
-$page-header-border-color:    $btgray-light-3 !default;
+$page-header-border-color:    $gray--3 !default;
 //** Width of horizontal description list titles
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
-$hr-border:                   $btgray-light-3 !default;
+$hr-border:                   $gray--3 !default;
 
 
