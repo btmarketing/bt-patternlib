@@ -4,5 +4,3 @@ latest-change.txt
 *-ck.js
 *.sass-cache/
 node_modules/
-public/styleguide/html/styleguide.html
-
