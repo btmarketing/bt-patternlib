@@ -34,152 +34,172 @@
   	box-sizing: border-box;
 }
 
+.colorpattern--primary {
+	@extend .colorpattern;
+	font-weight: bold;
+	height: 90px;
+	text-align:	center;
+	line-height: 24px;
+	padding-top: 20px;
+}
+
 .color-dark {
 	color: #ffffff;
 	opacity: .9;
 }
 
 .red {
-	background-color: $btred;
-	&.light1 {background-color: $btred-light-1}
-	&.light2 {background-color: $btred-light-2}
-	&.light3 {background-color: $btred-light-3}
-	&.light4 {background-color: $btred-light-4}
-	&.light5 {background-color: $btred-light-5}
-	&.dark1 {background-color: $btred-dark-1;}
-	&.dark2 {background-color: $btred-dark-2;}
-	&.dark3 {background-color: $btred-dark-3;}
-	&.dark4 {background-color: $btred-dark-4;}
+	background-color: $red;
+	&.step1 {background-color: $red--1}
+	&.step2 {background-color: $red--2}
+	&.step3 {background-color: $red--3}
+	&.step4 {background-color: $red--4}
+	&.step5 {background-color: $red--5}
+	&.step6 {background-color: $red--6}
+	&.step7 {background-color: $red--7}
+	&.step8 {background-color: $red--8}
+	&.step9 {background-color: $red--9}
+	&.step10 {background-color: $red--10}
 }
 
 .gray {
-	background-color: $btgray;
-	&.light1 {background-color: $btgray-light-1}
-	&.light2 {background-color: $btgray-light-2}
-	&.light3 {background-color: $btgray-light-3}
-	&.light4 {background-color: $btgray-light-4}
-	&.light5 {background-color: $btgray-light-5}
-	&.dark1 {background-color: $btgray-dark-1;}
-	&.dark2 {background-color: $btgray-dark-2;}
-	&.dark3 {background-color: $btgray-dark-3;}
-	&.dark4 {background-color: $btgray-dark-4;}
+	background-color: $gray;
+	&.step1 {background-color: $gray--1}
+	&.step2 {background-color: $gray--2}
+	&.step3 {background-color: $gray--3}
+	&.step4 {background-color: $gray--4}
+	&.step5 {background-color: $gray--5}
+	&.step6 {background-color: $gray--6}
+	&.step7 {background-color: $gray--7}
+	&.step8 {background-color: $gray--8}
+	&.step9 {background-color: $gray--9}
+	&.step10 {background-color: $gray--10}
 }
 
 .slate {
-	background-color: $btslate;
-	&.light1 {background-color: $btslate-light-1}
-	&.light2 {background-color: $btslate-light-2}
-	&.light3 {background-color: $btslate-light-3}
-	&.light4 {background-color: $btslate-light-4}
-	&.light5 {background-color: $btslate-light-5}
-	&.dark1 {background-color: $btslate-dark-1;}
-	&.dark2 {background-color: $btslate-dark-2;}
-	&.dark3 {background-color: $btslate-dark-3;}
-	&.dark4 {background-color: $btslate-dark-4;}
+	background-color: $slate;
+	&.step1 {background-color: $slate--1}
+	&.step2 {background-color: $slate--2}
+	&.step3 {background-color: $slate--3}
+	&.step4 {background-color: $slate--4}
+	&.step5 {background-color: $slate--5}
+	&.step6 {background-color: $slate--6}
+	&.step7 {background-color: $slate--7}
+	&.step8 {background-color: $slate--8}
+	&.step9 {background-color: $slate--9}
+	&.step10 {background-color: $slate--10}
 }
 
 .pink {
-	background-color: $btpink;
-	&.light1 {background-color: $btpink-light-1}
-	&.light2 {background-color: $btpink-light-2}
-	&.light3 {background-color: $btpink-light-3}
-	&.light4 {background-color: $btpink-light-4}
-	&.light5 {background-color: $btpink-light-5}
-	&.dark1 {background-color: $btpink-dark-1;}
-	&.dark2 {background-color: $btpink-dark-2;}
-	&.dark3 {background-color: $btpink-dark-3;}
-	&.dark4 {background-color: $btpink-dark-4;}
+	background-color: $pink;
+	&.step1 {background-color: $pink--1}
+	&.step2 {background-color: $pink--2}
+	&.step3 {background-color: $pink--3}
+	&.step4 {background-color: $pink--4}
+	&.step5 {background-color: $pink--5}
+	&.step6 {background-color: $pink--6}
+	&.step7 {background-color: $pink--7}
+	&.step8 {background-color: $pink--8}
+	&.step9 {background-color: $pink--9}
+	&.step10 {background-color: $pink--10}
 }
 
 .orange {
-	background-color: $btorange;
-	&.light1 {background-color: $btorange-light-1}
-	&.light2 {background-color: $btorange-light-2}
-	&.light3 {background-color: $btorange-light-3}
-	&.light4 {background-color: $btorange-light-4}
-	&.light5 {background-color: $btorange-light-5}
-	&.dark1 {background-color: $btorange-dark-1;}
-	&.dark2 {background-color: $btorange-dark-2;}
-	&.dark3 {background-color: $btorange-dark-3;}
-	&.dark4 {background-color: $btorange-dark-4;}
+	background-color: $orange;
+	&.step1 {background-color: $orange--1}
+	&.step2 {background-color: $orange--2}
+	&.step3 {background-color: $orange--3}
+	&.step4 {background-color: $orange--4}
+	&.step5 {background-color: $orange--5}
+	&.step6 {background-color: $orange--6}
+	&.step7 {background-color: $orange--7}
+	&.step8 {background-color: $orange--8}
+	&.step9 {background-color: $orange--9}
+	&.step10 {background-color: $orange--10}
 }
 
 .green {
-	background-color: $btgreen;
-	&.light1 {background-color: $btgreen-light-1}
-	&.light2 {background-color: $btgreen-light-2}
-	&.light3 {background-color: $btgreen-light-3}
-	&.light4 {background-color: $btgreen-light-4}
-	&.light5 {background-color: $btgreen-light-5}
-	&.dark1 {background-color: $btgreen-dark-1;}
-	&.dark2 {background-color: $btgreen-dark-2;}
-	&.dark3 {background-color: $btgreen-dark-3;}
-	&.dark4 {background-color: $btgreen-dark-4;}
+	background-color: $green;
+	&.step1 {background-color: $green--1}
+	&.step2 {background-color: $green--2}
+	&.step3 {background-color: $green--3}
+	&.step4 {background-color: $green--4}
+	&.step5 {background-color: $green--5}
+	&.step6 {background-color: $green--6}
+	&.step7 {background-color: $green--7}
+	&.step8 {background-color: $green--8}
+	&.step9 {background-color: $green--9}
+	&.step10 {background-color: $green--10}
 }
 
 .teal {
-	background-color: $btteal;
-	&.light1 {background-color: $btteal-light-1}
-	&.light2 {background-color: $btteal-light-2}
-	&.light3 {background-color: $btteal-light-3}
-	&.light4 {background-color: $btteal-light-4}
-	&.light5 {background-color: $btteal-light-5}
-	&.dark1 {background-color: $btteal-dark-1;}
-	&.dark2 {background-color: $btteal-dark-2;}
-	&.dark3 {background-color: $btteal-dark-3;}
-	&.dark4 {background-color: $btteal-dark-4;}
+	background-color: $teal;
+	&.step1 {background-color: $teal--1}
+	&.step2 {background-color: $teal--2}
+	&.step3 {background-color: $teal--3}
+	&.step4 {background-color: $teal--4}
+	&.step5 {background-color: $teal--5}
+	&.step6 {background-color: $teal--6}
+	&.step7 {background-color: $teal--7}
+	&.step8 {background-color: $teal--8}
+	&.step9 {background-color: $teal--9}
+	&.step10 {background-color: $teal--10}
 }
 
 .cyan {
-	background-color: $btcyan;
-	&.light1 {background-color: $btcyan-light-1}
-	&.light2 {background-color: $btcyan-light-2}
-	&.light3 {background-color: $btcyan-light-3}
-	&.light4 {background-color: $btcyan-light-4}
-	&.light5 {background-color: $btcyan-light-5}
-	&.dark1 {background-color: $btcyan-dark-1;}
-	&.dark2 {background-color: $btcyan-dark-2;}
-	&.dark3 {background-color: $btcyan-dark-3;}
-	&.dark4 {background-color: $btcyan-dark-4;}
+	background-color: $cyan;
+	&.step1 {background-color: $cyan--1}
+	&.step2 {background-color: $cyan--2}
+	&.step3 {background-color: $cyan--3}
+	&.step4 {background-color: $cyan--4}
+	&.step5 {background-color: $cyan--5}
+	&.step6 {background-color: $cyan--6}
+	&.step7 {background-color: $cyan--7}
+	&.step8 {background-color: $cyan--8}
+	&.step9 {background-color: $cyan--9}
+	&.step10 {background-color: $cyan--10}
 }
 
 .blue {
-	background-color: $btblue;
-	&.light1 {background-color: $btblue-light-1}
-	&.light2 {background-color: $btblue-light-2}
-	&.light3 {background-color: $btblue-light-3}
-	&.light4 {background-color: $btblue-light-4}
-	&.light5 {background-color: $btblue-light-5}
-	&.dark1 {background-color: $btblue-dark-1;}
-	&.dark2 {background-color: $btblue-dark-2;}
-	&.dark3 {background-color: $btblue-dark-3;}
-	&.dark4 {background-color: $btblue-dark-4;}
+	background-color: $blue;
+	&.step1 {background-color: $blue--1}
+	&.step2 {background-color: $blue--2}
+	&.step3 {background-color: $blue--3}
+	&.step4 {background-color: $blue--4}
+	&.step5 {background-color: $blue--5}
+	&.step6 {background-color: $blue--6}
+	&.step7 {background-color: $blue--7}
+	&.step8 {background-color: $blue--8}
+	&.step9 {background-color: $blue--9}
+	&.step10 {background-color: $blue--10}
 }
 
 .navy {
-	background-color: $btnavy;
-	&.light1 {background-color: $btnavy-light-1}
-	&.light2 {background-color: $btnavy-light-2}
-	&.light3 {background-color: $btnavy-light-3}
-	&.light4 {background-color: $btnavy-light-4}
-	&.light5 {background-color: $btnavy-light-5}
-	&.dark1 {background-color: $btnavy-dark-1;}
-	&.dark2 {background-color: $btnavy-dark-2;}
-	&.dark3 {background-color: $btnavy-dark-3;}
-	&.dark4 {background-color: $btnavy-dark-4;}
+	background-color: $navy;
+	&.step1 {background-color: $navy--1}
+	&.step2 {background-color: $navy--2}
+	&.step3 {background-color: $navy--3}
+	&.step4 {background-color: $navy--4}
+	&.step5 {background-color: $navy--5}
+	&.step6 {background-color: $navy--6}
+	&.step7 {background-color: $navy--7}
+	&.step8 {background-color: $navy--8}
+	&.step9 {background-color: $navy--9}
+	&.step10 {background-color: $navy--10}
 }
 
 .purple {
-	background-color: $btpurple;
-	&.light1 {background-color: $btpurple-light-1}
-	&.light2 {background-color: $btpurple-light-2}
-	&.light3 {background-color: $btpurple-light-3}
-	&.light4 {background-color: $btpurple-light-4}
-	&.light5 {background-color: $btpurple-light-5}
-	&.dark1 {background-color: $btpurple-dark-1;}
-	&.dark2 {background-color: $btpurple-dark-2;}
-	&.dark3 {background-color: $btpurple-dark-3;}
-	&.dark4 {background-color: $btpurple-dark-4;}
+	background-color: $purple;
+	&.step1 {background-color: $purple--1}
+	&.step2 {background-color: $purple--2}
+	&.step3 {background-color: $purple--3}
+	&.step4 {background-color: $purple--4}
+	&.step5 {background-color: $purple--5}
+	&.step6 {background-color: $purple--6}
+	&.step7 {background-color: $purple--7}
+	&.step8 {background-color: $purple--8}
+	&.step9 {background-color: $purple--9}
+	&.step10 {background-color: $purple--10}
 }
 
 /* Style Guide Interface Colors */ 

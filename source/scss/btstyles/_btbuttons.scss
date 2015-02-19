@@ -48,7 +48,7 @@
   border-right: solid 2px;
   @include h-borders(2px, 1, $size-5, solid);
   &:hover, &:active {
-    background-color: $btgray-light-5;
+    background-color: $gray--1;
     color: $button-primary-bg;
   }
   // add class ondark if this is on a dark background

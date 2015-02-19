@@ -25,11 +25,11 @@
 	@include rhythm-padding(1, 1, $size-base);
  	@include rhythm-borders(2px, 1, $size-base, solid);
     display: block;
-    border: 2px solid $btgray-light-4;
+    border: 2px solid $gray--2;
     border-radius: 2px;
     vertical-align: middle;
     font-weight: 400;
-    color: $btgray-dark-3;
+    color: $gray--9;
     @include transition(border-color 0.3s ease-in-out);
     width: 100%;
 }
@@ -39,11 +39,11 @@
     @include rhythm-padding(1, 1, $size-base);
  	@include rhythm-borders(2px, 1, $size-base, solid);
     display: block;
-    border: 2px solid $btgray-light-4;
+    border: 2px solid $gray--2;
     border-radius: 2px;
     vertical-align: middle;
     font-weight: 400;
-    color: $btgray-light-1;
+    color: $gray--3;
     @include transition(border-color 0.3s ease-in-out);
     width: 100%;
 }
@@ -66,13 +66,13 @@
 .form select:focus,
 .form textarea:focus {
     outline: 0;
-    border-color: $btblue-light-4;
+    border-color: $blue--2;
 }
 
 //form style while focused IE8 fix
 .form input:not([type]):focus {
     outline: 0;
-    border-color: $btblue-light-4;
+    border-color: $blue--2;
 }
 
 // disabled inputs
@@ -93,31 +93,31 @@
 .form select[disabled],
 .form textarea[disabled] {
     cursor: not-allowed;
-    background-color: $btgray-light-4;
-    color: $btgray;
+    background-color: $gray--2;
+    color: $gray;
 }
 
 //disabled inputs IE8 Fix
 .form input:not([type])[disabled] {
     cursor: not-allowed;
-    background-color: $btgray-light-4;
-    color: $btgray;
+    background-color: $gray--2;
+    color: $gray;
 }
 
 // Read Only Style
 .form input[readonly],
 .form select[readonly],
 .form textarea[readonly] {
-    background-color: $btgray-light-4;
-    color: $btgray;
-    border-color: $btgray-light-3;
+    background-color: $gray--2;
+    color: $gray;
+    border-color: $gray--3;
 }
 
 // Invalid Style
 .form input:focus:invalid,
 .form textarea:focus:invalid,
 .form select:focus:invalid {
-    border-color: $btred-light-4;
+    border-color: $red--2;
 }
 
 // Select dropdown style
@@ -228,7 +228,7 @@
 // help message for stacked forms
 .form-message {
     display: block;
-    color: $btgray-dark-1;
+    color: $gray--7;
     font-size: $size-6;
 }
 

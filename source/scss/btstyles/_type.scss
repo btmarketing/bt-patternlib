@@ -82,7 +82,7 @@ blockquote {
 	@include adjust-font-size-to(25px);
 	@include rhythm-margins(1, 1, 25px);
 	font-weight: 300;
-	background: -webkit-linear-gradient($btblue, $btpurple);
+	background: -webkit-linear-gradient($blue, $purple);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
