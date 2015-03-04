@@ -79,7 +79,7 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('default', ['build', 'server', 'watch']);
-    grunt.registerTask('build', ['shell:patternlab', 'compass']);
+    grunt.registerTask('build', ['shell:patternlab', 'compass', 'sass']);
     grunt.registerTask('buildcss',  ['compass', 'sass']);
     grunt.registerTask('server', ['express','open',]);
 
